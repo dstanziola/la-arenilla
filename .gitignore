@@ -1,0 +1,36 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*.swo
+
+# Node (si se agrega en el futuro)
+node_modules/
+npm-debug.log
+
+# Build/Temp
+dist/
+tmp/
+*.tmp
+*.temp
+
+# Logs
+*.log
+
+# Imágenes originales sin optimizar
+**/originals/
+**/raw/
+
+# Backups
+*.bak
+*.backup
+
+# Environment
+.env
+.env.local

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#5D3A1A"/>
+  <!-- Mesa de madera -->
+  <rect x="50" y="350" width="700" height="200" fill="#8B5A2B"/>
+  <rect x="50" y="350" width="700" height="20" fill="#A67C52"/>
+  <!-- Plato/Olla -->
+  <ellipse cx="400" cy="320" rx="180" ry="60" fill="#2C2C2C"/>
+  <ellipse cx="400" cy="300" rx="160" ry="50" fill="#E8A838"/>
+  <!-- Contenido (sopa) -->
+  <ellipse cx="400" cy="290" rx="140" ry="40" fill="#D4A857"/>
+  <!-- Vapor -->
+  <path d="M320 200 Q330 180 320 160" stroke="white" stroke-width="8" fill="none" opacity="0.4"/>
+  <path d="M400 190 Q410 165 400 140" stroke="white" stroke-width="8" fill="none" opacity="0.5"/>
+  <path d="M480 200 Q490 175 480 150" stroke="white" stroke-width="8" fill="none" opacity="0.4"/>
+  <!-- Decoración vegetal -->
+  <circle cx="360" cy="285" r="15" fill="#4A7C43"/>
+  <circle cx="420" cy="280" r="12" fill="#E8A838" opacity="0.8"/>
+  <circle cx="440" cy="295" r="10" fill="#4A7C43"/>
+  <text x="400" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="white" opacity="0.9">Sancocho Panameño</text>
+</svg>

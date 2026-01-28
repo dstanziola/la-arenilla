@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A7C43"/>
+      <stop offset="100%" style="stop-color:#2D5A27"/>
+    </linearGradient>
+  </defs>
+  <!-- Ícono de montaña -->
+  <g transform="translate(5, 5)">
+    <circle cx="25" cy="25" r="24" fill="#2D5A27"/>
+    <path d="M8 40 L25 12 L42 40 Z" fill="url(#logoGrad)"/>
+    <circle cx="35" cy="18" r="5" fill="#E8A838"/>
+    <path d="M18 40 L22 30 L14 30 Z" fill="#1E3D1A"/>
+  </g>
+</svg>

@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Arenilla - Turismo rural comunitario en Capira, Panamá Oeste. Cabaña, camping, guías turísticos, comidas criollas y productos agrícolas frescos.">
+    <meta name="keywords" content="turismo rural Panamá, ecoturismo Capira, camping Panamá Oeste, agroturismo Panamá, cabaña rural Panamá">
+    <meta name="author" content="Asociación Agro Eco Turística de La Arenilla">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="La Arenilla - Turismo Rural Comunitario">
+    <meta property="og:description" content="Vive la experiencia del campo panameño. Cabaña, camping, guías turísticos y gastronomía criolla en Capira.">
+    <meta property="og:image" content="assets/img/og-image.jpg">
+    <meta property="og:url" content="https://laarenilla.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_PA">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    
+    <!-- Preconnect para Google Maps -->
+    <link rel="preconnect" href="https://maps.googleapis.com">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>La Arenilla | Turismo Rural en Capira, Panamá</title>
+    
+    <!-- Schema.org - Negocio Local -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TouristAttraction",
+        "name": "Asociación Agro Eco Turística de La Arenilla",
+        "description": "Turismo rural comunitario con cabaña, camping, guías turísticos y gastronomía criolla en Capira, Panamá Oeste.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "La Arenilla, Cirí Grande",
+            "addressRegion": "Panamá Oeste",
+            "addressCountry": "PA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "9.0833",
+            "longitude": "-79.8833"
+        },
+        "openingHours": "Mo-Su 07:00-18:00",
+        "telephone": "+507-0000-0000",
+        "priceRange": "$$",
+        "image": "assets/img/la-arenilla-hero.jpg",
+        "amenityFeature": [
+            {"@type": "LocationFeatureSpecification", "name": "Cabaña"},
+            {"@type": "LocationFeatureSpecification", "name": "Área de Camping"},
+            {"@type": "LocationFeatureSpecification", "name": "Guías Turísticos"},
+            {"@type": "LocationFeatureSpecification", "name": "Restaurante"}
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navegación Principal -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/logo.svg" alt="La Arenilla" class="nav__logo-img">
+                <span class="nav__logo-text">La Arenilla</span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#inicio" class="nav__link active">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#servicios" class="nav__link">Servicios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#galeria" class="nav__link">Galería</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#ubicacion" class="nav__link">Cómo Llegar</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#nosotros" class="nav__link">Nosotros</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacto" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+                
+                <button class="nav__close" id="nav-close" aria-label="Cerrar menú">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="hero__bg">
+                <picture>
+                    <source srcset="assets/img/hero-mobile.svg" media="(max-width: 768px)">
+                    <source srcset="assets/img/hero-desktop.svg" media="(min-width: 769px)">
+                    <img src="assets/img/hero-desktop.svg" alt="Vista panorámica de La Arenilla" class="hero__img" loading="eager">
+                </picture>
+                <div class="hero__overlay"></div>
+            </div>
+            
+            <div class="hero__content container">
+                <span class="hero__badge">Turismo Rural Comunitario</span>
+                <h1 class="hero__title">Vive la experiencia del campo panameño</h1>
+                <p class="hero__description">
+                    Escápate a La Arenilla, donde la naturaleza, la gastronomía criolla 
+                    y la calidez de nuestra comunidad te esperan.
+                </p>
+                <div class="hero__actions">
+                    <a href="#servicios" class="btn btn--primary">Explorar Servicios</a>
+                    <a href="https://wa.me/50700000000?text=Hola,%20me%20interesa%20visitar%20La%20Arenilla" 
+                       class="btn btn--secondary" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Contáctanos
+                    </a>
+                </div>
+            </div>
+            
+            <a href="#servicios" class="hero__scroll" aria-label="Ir a servicios">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </a>
+        </section>
+
+        <!-- Servicios -->
+        <section class="servicios section" id="servicios">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__badge">Lo que ofrecemos</span>
+                    <h2 class="section__title">Nuestros Servicios</h2>
+                    <p class="section__description">
+                        Experiencias auténticas preparadas con cariño por nuestra comunidad
+                    </p>
+                </header>
+                
+                <div class="servicios__grid">
+                    <!-- Cabaña -->
+                    <article class="servicio-card">
+                        <div class="servicio-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 21h18M4 21V10l8-6 8 6v11M9 21v-6h6v6"/>
+                            </svg>
+                        </div>
+                        <h3 class="servicio-card__title">Cabaña</h3>
+                        <p class="servicio-card__description">
+                            Hospedaje rústico y acogedor rodeado de naturaleza. 
+                            Ideal para desconectarte de la ciudad.
+                        </p>
+                        <ul class="servicio-card__features">
+                            <li>Capacidad: [Por confirmar]</li>
+                            <li>Baño privado</li>
+                            <li>Vista al valle</li>
+                        </ul>
+                        <a href="https://wa.me/50700000000?text=Hola,%20me%20interesa%20reservar%20la%20cabaña" 
+                           class="servicio-card__btn" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Consultar Disponibilidad
+                        </a>
+                    </article>
+                    
+                    <!-- Camping -->
+                    <article class="servicio-card">
+                        <div class="servicio-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 22h20L12 2z"/>
+                                <path d="M12 22v-6"/>
+                            </svg>
+                        </div>
+                        <h3 class="servicio-card__title">Camping</h3>
+                        <p class="servicio-card__description">
+                            Área habilitada para acampar bajo las estrellas. 
+                            Conecta con la naturaleza en su forma más pura.
+                        </p>
+                        <ul class="servicio-card__features">
+                            <li>Terreno nivelado</li>
+                            <li>Acceso a baños</li>
+                            <li>Fogata permitida</li>
+                        </ul>
+                        <a href="https://wa.me/50700000000?text=Hola,%20me%20interesa%20el%20área%20de%20camping" 
+                           class="servicio-card__btn" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Consultar Disponibilidad
+                        </a>
+                    </article>
+                    
+                    <!-- Guías Turísticos -->
+                    <article class="servicio-card">
+                        <div class="servicio-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="10" r="3"/>
+                                <path d="M12 2a8 8 0 0 0-8 8c0 5.4 7 11 8 12 1-1 8-6.6 8-12a8 8 0 0 0-8-8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="servicio-card__title">Guías Turísticos</h3>
+                        <p class="servicio-card__description">
+                            Recorridos guiados por senderos, cascadas y áreas de interés 
+                            con conocedores locales de la zona.
+                        </p>
+                        <ul class="servicio-card__features">
+                            <li>Rutas de senderismo</li>
+                            <li>Avistamiento de aves</li>
+                            <li>Historia local</li>
+                        </ul>
+                        <a href="https://wa.me/50700000000?text=Hola,%20me%20interesa%20un%20tour%20guiado" 
+                           class="servicio-card__btn" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Reservar Tour
+                        </a>
+                    </article>
+                    
+                    <!-- Comidas Criollas -->
+                    <article class="servicio-card">
+                        <div class="servicio-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                                <line x1="6" y1="1" x2="6" y2="4"/>
+                                <line x1="10" y1="1" x2="10" y2="4"/>
+                                <line x1="14" y1="1" x2="14" y2="4"/>
+                            </svg>
+                        </div>
+                        <h3 class="servicio-card__title">Comidas Criollas</h3>
+                        <p class="servicio-card__description">
+                            Gastronomía tradicional panameña preparada por las familias 
+                            de la comunidad con ingredientes locales.
+                        </p>
+                        <ul class="servicio-card__features">
+                            <li>Sancocho</li>
+                            <li>Patacones y arroz</li>
+                            <li>Bebidas naturales</li>
+                        </ul>
+                        <a href="https://wa.me/50700000000?text=Hola,%20me%20interesa%20reservar%20comida%20criolla" 
+                           class="servicio-card__btn" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Hacer Pedido
+                        </a>
+                    </article>
+                    
+                    <!-- Vivero -->
+                    <article class="servicio-card">
+                        <div class="servicio-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22v-7"/>
+                                <path d="M9 9c0-3 3-5 3-5s3 2 3 5c0 2.5-1.5 4-3 4s-3-1.5-3-4z"/>
+                                <path d="M4 15c0-2.5 2-4 4-4 .5 0 1 .1 1.5.3"/>
+                                <path d="M14.5 11.3c.5-.2 1-.3 1.5-.3 2 0 4 1.5 4 4"/>
+                            </svg>
+                        </div>
+                        <h3 class="servicio-card__title">Vivero</h3>
+                        <p class="servicio-card__description">
+                            Plantas ornamentales cultivadas con dedicación. 
+                            Llévate un pedacito de La Arenilla a tu hogar.
+                        </p>
+                        <ul class="servicio-card__features">
+                            <li>Orquídeas</li>
+                            <li>Helechos</li>
+                            <li>Plantas de sombra</li>
+                        </ul>
+                        <a href="https://wa.me/50700000000?text=Hola,%20me%20interesan%20las%20plantas%20del%20vivero" 
+                           class="servicio-card__btn" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Ver Disponibles
+                        </a>
+                    </article>
+                    
+                    <!-- Productos Agrícolas -->
+                    <article class="servicio-card">
+                        <div class="servicio-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2a10 10 0 0 1 10 10 2 2 0 0 1-2 2h-3a2 2 0 0 0-2 2v3a2 2 0 0 1-2 2 10 10 0 0 1-10-10 10 10 0 0 1 10-10z"/>
+                                <circle cx="8" cy="10" r="1"/>
+                                <circle cx="16" cy="10" r="1"/>
+                                <circle cx="12" cy="6" r="1"/>
+                            </svg>
+                        </div>
+                        <h3 class="servicio-card__title">Productos Agrícolas</h3>
+                        <p class="servicio-card__description">
+                            Cosechas frescas directamente del campo a tu mesa. 
+                            Frutas, verduras y productos de temporada.
+                        </p>
+                        <ul class="servicio-card__features">
+                            <li>Frutas de temporada</li>
+                            <li>Verduras frescas</li>
+                            <li>Productos orgánicos</li>
+                        </ul>
+                        <a href="https://wa.me/50700000000?text=Hola,%20me%20interesan%20los%20productos%20agrícolas" 
+                           class="servicio-card__btn" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Consultar Productos
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería -->
+        <section class="galeria section section--alt" id="galeria">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__badge">Descubre</span>
+                    <h2 class="section__title">Galería</h2>
+                    <p class="section__description">
+                        Un vistazo a la belleza natural de La Arenilla
+                    </p>
+                </header>
+                
+                <div class="galeria__filtros">
+                    <button class="galeria__filtro active" data-filter="todos">Todos</button>
+                    <button class="galeria__filtro" data-filter="paisajes">Paisajes</button>
+                    <button class="galeria__filtro" data-filter="cabana">Cabaña</button>
+                    <button class="galeria__filtro" data-filter="actividades">Actividades</button>
+                    <button class="galeria__filtro" data-filter="gastronomia">Gastronomía</button>
+                </div>
+                
+                <div class="galeria__grid">
+                    <!-- Imágenes placeholder - Reemplazar con fotos reales -->
+                    <figure class="galeria__item" data-category="paisajes">
+                        <img src="assets/img/galeria/placeholder-1.svg" 
+                             alt="Vista panorámica del valle" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Vista del Valle</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="cabana">
+                        <img src="assets/img/galeria/placeholder-2.svg" 
+                             alt="Interior de la cabaña" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Cabaña Rústica</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="actividades">
+                        <img src="assets/img/galeria/placeholder-3.svg" 
+                             alt="Sendero en el bosque" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Senderismo</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="gastronomia">
+                        <img src="assets/img/galeria/placeholder-4.svg" 
+                             alt="Plato de sancocho tradicional" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Sancocho Panameño</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="paisajes">
+                        <img src="assets/img/galeria/placeholder-5.svg" 
+                             alt="Atardecer en La Arenilla" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Atardecer</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="actividades">
+                        <img src="assets/img/galeria/placeholder-6.svg" 
+                             alt="Área de camping" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Zona de Camping</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ubicación -->
+        <section class="ubicacion section" id="ubicacion">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__badge">Visítanos</span>
+                    <h2 class="section__title">Cómo Llegar</h2>
+                    <p class="section__description">
+                        A solo 1.5-2 horas de Ciudad de Panamá
+                    </p>
+                </header>
+                
+                <div class="ubicacion__content">
+                    <div class="ubicacion__info">
+                        <div class="ubicacion__direccion">
+                            <h3>Dirección</h3>
+                            <address>
+                                La Arenilla, Cirí Grande<br>
+                                Capira, Panamá Oeste<br>
+                                República de Panamá
+                            </address>
+                        </div>
+                        
+                        <div class="ubicacion__instrucciones">
+                            <h3>Instrucciones</h3>
+                            <ol class="ubicacion__pasos">
+                                <li>Toma la vía Interamericana hacia el oeste</li>
+                                <li>En Capira, toma el desvío hacia Cirí Grande</li>
+                                <li>Continúa por la carretera principal aproximadamente 20 km</li>
+                                <li>Busca el letrero de La Arenilla a mano izquierda</li>
+                            </ol>
+                            <p class="ubicacion__nota">
+                                <strong>Nota:</strong> Se recomienda vehículo 4x4 o doble tracción 
+                                en temporada lluviosa.
+                            </p>
+                        </div>
+                        
+                        <div class="ubicacion__acciones">
+                            <a href="https://maps.google.com/?q=9.0833,-79.8833" 
+                               class="btn btn--primary" 
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                                </svg>
+                                Abrir en Google Maps
+                            </a>
+                            <a href="https://waze.com/ul?ll=9.0833,-79.8833&navigate=yes" 
+                               class="btn btn--outline" 
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                Abrir en Waze
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="ubicacion__mapa">
+                        <!-- Mapa embebido - Reemplazar con coordenadas exactas -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15765.123456789!2d-79.8833!3d9.0833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMDQnNTkuOSJOIDc5wrA1Myc1OS45Ilc!5e0!3m2!1ses!2spa!4v1234567890"
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="Ubicación de La Arenilla en Google Maps"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nosotros -->
+        <section class="nosotros section section--alt" id="nosotros">
+            <div class="container">
+                <div class="nosotros__content">
+                    <div class="nosotros__imagen">
+                        <img src="assets/img/comunidad.svg" 
+                             alt="Miembros de la comunidad de La Arenilla" 
+                             loading="lazy">
+                    </div>
+                    
+                    <div class="nosotros__texto">
+                        <header class="section__header section__header--left">
+                            <span class="section__badge">Nuestra Historia</span>
+                            <h2 class="section__title">Sobre Nosotros</h2>
+                        </header>
+                        
+                        <p>
+                            Somos la <strong>Asociación Agro Eco Turística de La Arenilla</strong>, 
+                            una comunidad rural unida por el amor a nuestra tierra y el deseo 
+                            de compartir sus tesoros con el mundo.
+                        </p>
+                        <p>
+                            Ubicados en las montañas de Capira, hemos trabajado juntos para 
+                            desarrollar un turismo que beneficia directamente a nuestras familias 
+                            mientras preservamos el medio ambiente y nuestras tradiciones.
+                        </p>
+                        <p>
+                            Cada servicio que ofrecemos es preparado con cariño por miembros 
+                            de nuestra comunidad. Cuando nos visitas, no solo disfrutas de la 
+                            naturaleza, sino que apoyas el desarrollo sostenible de nuestras familias.
+                        </p>
+                        
+                        <div class="nosotros__valores">
+                            <div class="nosotros__valor">
+                                <span class="nosotros__valor-numero">100%</span>
+                                <span class="nosotros__valor-texto">Comunitario</span>
+                            </div>
+                            <div class="nosotros__valor">
+                                <span class="nosotros__valor-numero">10+</span>
+                                <span class="nosotros__valor-texto">Familias</span>
+                            </div>
+                            <div class="nosotros__valor">
+                                <span class="nosotros__valor-numero">5+</span>
+                                <span class="nosotros__valor-texto">Años de experiencia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contacto section section--alt" id="contacto">
+            <div class="container">
+                <div class="contacto__content">
+                    <div class="contacto__info">
+                        <header class="section__header section__header--left">
+                            <span class="section__badge">Contacto</span>
+                            <h2 class="section__title">Escríbenos</h2>
+                        </header>
+                        
+                        <p>
+                            ¿Tienes preguntas o quieres hacer una reservación? 
+                            Completa el formulario o contáctanos directamente por WhatsApp.
+                        </p>
+                        
+                        <div class="contacto__canales">
+                            <a href="https://wa.me/50700000000" class="contacto__canal" target="_blank" rel="noopener noreferrer">
+                                <div class="contacto__canal-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                    </svg>
+                                </div>
+                                <div class="contacto__canal-text">
+                                    <span class="contacto__canal-label">WhatsApp</span>
+                                    <span class="contacto__canal-value">+507 0000-0000</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://instagram.com/laarenilla" class="contacto__canal" target="_blank" rel="noopener noreferrer">
+                                <div class="contacto__canal-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    </svg>
+                                </div>
+                                <div class="contacto__canal-text">
+                                    <span class="contacto__canal-label">Instagram</span>
+                                    <span class="contacto__canal-value">@laarenilla</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto__formulario">
+                        <!-- Formulario con Formspree - Reemplazar YOUR_FORM_ID -->
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="form" id="contact-form">
+                            <div class="form__group">
+                                <label for="nombre" class="form__label">Nombre completo *</label>
+                                <input type="text" id="nombre" name="nombre" class="form__input" required placeholder="Tu nombre">
+                            </div>
+                            
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label for="email" class="form__label">Correo electrónico *</label>
+                                    <input type="email" id="email" name="email" class="form__input" required placeholder="tu@correo.com">
+                                </div>
+                                
+                                <div class="form__group">
+                                    <label for="telefono" class="form__label">Teléfono</label>
+                                    <input type="tel" id="telefono" name="telefono" class="form__input" placeholder="+507 0000-0000">
+                                </div>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="servicio" class="form__label">Servicio de interés</label>
+                                <select id="servicio" name="servicio" class="form__select">
+                                    <option value="">Seleccionar...</option>
+                                    <option value="cabana">Alquiler de Cabaña</option>
+                                    <option value="camping">Área de Camping</option>
+                                    <option value="tour">Tour Guiado</option>
+                                    <option value="comida">Comidas Criollas</option>
+                                    <option value="vivero">Vivero / Plantas</option>
+                                    <option value="productos">Productos Agrícolas</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="mensaje" class="form__label">Mensaje *</label>
+                                <textarea id="mensaje" name="mensaje" class="form__textarea" required rows="4" placeholder="Cuéntanos sobre tu visita planificada, fechas, número de personas..."></textarea>
+                            </div>
+                            
+                            <!-- Honeypot anti-spam -->
+                            <input type="text" name="_gotcha" style="display:none">
+                            
+                            <button type="submit" class="btn btn--primary form__submit">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                                Enviar Mensaje
+                            </button>
+                        </form>
+                        
+                        <p class="form__note">
+                            * Campos requeridos. Responderemos en menos de 24 horas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">¿Listo para tu escapada?</h2>
+                    <p class="cta__description">
+                        Contáctanos por WhatsApp y planifica tu visita a La Arenilla. 
+                        Te ayudamos a organizar una experiencia inolvidable.
+                    </p>
+                    <a href="https://wa.me/50700000000?text=Hola,%20quiero%20planificar%20una%20visita%20a%20La%20Arenilla" 
+                       class="btn btn--primary btn--large" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Escríbenos por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <img src="assets/img/logo.svg" alt="La Arenilla" class="footer__logo-img">
+                        <span class="footer__logo-text">La Arenilla</span>
+                    </a>
+                    <p class="footer__tagline">
+                        Turismo rural comunitario en el corazón de Panamá Oeste
+                    </p>
+                </div>
+                
+                <nav class="footer__nav">
+                    <h4 class="footer__nav-title">Enlaces</h4>
+                    <ul class="footer__nav-list">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#ubicacion">Cómo Llegar</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footer__contacto">
+                    <h4 class="footer__nav-title">Contacto</h4>
+                    <ul class="footer__contacto-list">
+                        <li>
+                            <a href="https://wa.me/50700000000" target="_blank" rel="noopener noreferrer">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                +507 0000-0000
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/laarenilla" target="_blank" rel="noopener noreferrer">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                                @laarenilla
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; <span id="current-year">2026</span> Asociación Agro Eco Turística de La Arenilla. 
+                    Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/50700000000?text=Hola,%20me%20interesa%20visitar%20La%20Arenilla" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- Lightbox para galería -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imagen">
+        <button class="lightbox__close" aria-label="Cerrar">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <button class="lightbox__prev" aria-label="Imagen anterior">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <button class="lightbox__next" aria-label="Siguiente imagen">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+        <div class="lightbox__content">
+            <img src="" alt="" class="lightbox__img">
+            <p class="lightbox__caption"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>

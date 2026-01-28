@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB"/>
+      <stop offset="60%" style="stop-color:#E8D5B7"/>
+      <stop offset="100%" style="stop-color:#2D5A27"/>
+    </linearGradient>
+    <linearGradient id="mountainGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A7C43"/>
+      <stop offset="100%" style="stop-color:#2D5A27"/>
+    </linearGradient>
+  </defs>
+  <!-- Cielo -->
+  <rect width="1920" height="1080" fill="url(#skyGrad)"/>
+  <!-- Sol -->
+  <circle cx="1500" cy="200" r="80" fill="#F5C363" opacity="0.9"/>
+  <!-- Montañas fondo -->
+  <path d="M0 600 L400 300 L700 500 L1000 250 L1400 450 L1700 200 L1920 400 L1920 1080 L0 1080 Z" fill="#3D6B35" opacity="0.7"/>
+  <!-- Montañas frente -->
+  <path d="M0 700 L300 450 L600 600 L900 400 L1200 550 L1500 350 L1920 500 L1920 1080 L0 1080 Z" fill="url(#mountainGrad)"/>
+  <!-- Niebla -->
+  <ellipse cx="960" cy="750" rx="1200" ry="150" fill="white" opacity="0.3"/>
+  <!-- Texto -->
+  <text x="960" y="540" text-anchor="middle" font-family="Georgia, serif" font-size="48" fill="white" opacity="0.9">La Arenilla - Vista Panorámica</text>
+  <text x="960" y="600" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.7">Imagen placeholder - 1920x1080</text>
+</svg>
