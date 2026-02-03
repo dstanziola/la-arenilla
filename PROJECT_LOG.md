@@ -7,121 +7,63 @@
 ## Información del Proyecto
 
 - **Cliente:** Asociación Agro Eco Turística de La Arenilla
-- **Repositorio:** D:\ARENILLA
+- **Repositorio:** https://github.com/dstanziola/la-arenilla
+- **Sitio en vivo:** https://dstanziola.github.io/la-arenilla/
 - **Inicio:** 2026-01-28
-- **Estado:** En desarrollo - Listo para contenido del cliente
+- **Estado:** ✅ Publicado - Esperando contenido del cliente
 
 ---
 
 ## Sesión 003 | 2026-01-28
 
+### Resumen
+Completadas tareas de avance mientras se espera contenido del cliente. Sitio desplegado exitosamente en GitHub Pages.
+
 ### Actividades realizadas
-- ✅ Tareas adelantadas mientras se espera contenido del cliente
 
-### Tarea 1: Imágenes Placeholder
-- Creados 9 archivos SVG con diseños ilustrativos:
-  - `hero-desktop.svg` (1920x1080)
-  - `hero-mobile.svg` (768x1024)
-  - `galeria/placeholder-1.svg` a `placeholder-6.svg` (800x600)
-  - `comunidad.svg` (800x600)
-- Actualizadas referencias en index.html
+#### 1. Imágenes Placeholder (SVG)
+Creados 9 archivos SVG ilustrativos:
+- `hero-desktop.svg` (1920x1080) - Vista panorámica
+- `hero-mobile.svg` (768x1024) - Versión móvil
+- `galeria/placeholder-1.svg` a `placeholder-6.svg` (800x600)
+- `comunidad.svg` (800x600) - Ilustración del equipo
 
-### Tarea 2: Configuración de Hosting
-- Creado `netlify.toml` con headers de seguridad y caché
-- Creado `404.html` personalizado
-- Creado `.gitignore`
-- Actualizado `README.md` con instrucciones de despliegue
+#### 2. Configuración de Hosting
+- `netlify.toml` - Headers de seguridad y caché
+- `404.html` - Página de error personalizada
+- `.gitignore` - Exclusiones de Git
+- `README.md` - Instrucciones de despliegue actualizadas
 
-### Tarea 3: Formulario de Contacto
-- Agregada sección de contacto con formulario Formspree
+#### 3. Formulario de Contacto
+- Nueva sección `#contacto` con formulario Formspree
 - Campos: nombre, email, teléfono, servicio, mensaje
-- Incluido honeypot anti-spam
-- Agregados enlaces de WhatsApp e Instagram
-- Estilos CSS para formulario responsive
+- Honeypot anti-spam incluido
+- Enlaces directos a WhatsApp e Instagram
+- Estilos CSS responsive agregados
 
-### Tarea 4: Guía de Uso para Cliente
-- Creada documentación completa en `docs/GUIA_USO_CLIENTE.md`
-- Incluye: cambios comunes, reemplazo de fotos, formulario, solución de problemas
+#### 4. Guía de Uso para Cliente
+- `documentacion/GUIA_USO_CLIENTE.md` (~300 líneas)
+- Instrucciones para cambios comunes
+- Cómo reemplazar fotos
+- Configuración de Formspree
+- Solución de problemas
 
-### Archivos creados/modificados
+#### 5. Deploy en GitHub Pages
+- Repositorio sincronizado: https://github.com/dstanziola/la-arenilla
+- Reorganización: `src/` → `docs/` (requerido por GitHub Pages)
+- Documentación movida a `documentacion/`
+- **Sitio publicado:** https://dstanziola.github.io/la-arenilla/
+
+### Estructura final del repositorio
 ```
-Nuevos:
-├── src/assets/img/hero-desktop.svg
-├── src/assets/img/hero-mobile.svg
-├── src/assets/img/comunidad.svg
-├── src/assets/img/galeria/placeholder-1.svg
-├── src/assets/img/galeria/placeholder-2.svg
-├── src/assets/img/galeria/placeholder-3.svg
-├── src/assets/img/galeria/placeholder-4.svg
-├── src/assets/img/galeria/placeholder-5.svg
-├── src/assets/img/galeria/placeholder-6.svg
-├── src/404.html
-├── netlify.toml
-├── .gitignore
-├── docs/SOLICITUD_INSUMOS.md
-├── docs/LISTA_MATERIALES_CLIENTE.md
-└── docs/GUIA_USO_CLIENTE.md
-
-Modificados:
-├── src/index.html (formulario, navegación)
-├── src/css/styles.css (estilos formulario)
-└── README.md (instrucciones despliegue)
-```
-
-### Estado actual del sitio
-- ✅ 100% funcional con placeholders
-- ✅ Responsive (mobile-first)
-- ✅ Navegación completa (7 secciones)
-- ✅ Formulario de contacto listo (falta ID Formspree)
-- ✅ Configuración de hosting lista
-- ⏳ Esperando contenido real del cliente
-
-### Pendiente del cliente
-Ver `docs/SOLICITUD_INSUMOS.md` para lista completa:
-- [ ] Número de WhatsApp real
-- [ ] Handle de Instagram
-- [ ] Fotografías (31-49 fotos)
-- [ ] Precios de servicios
-- [ ] Coordenadas GPS exactas
-- [ ] Historia de la comunidad
-- [ ] Testimonios de visitantes
-
----
-
-## Sesión 002 | 2026-01-28
-
-### Actividades realizadas
-- ✅ Fase 2 - Desarrollo Base completada
-- Creación de HTML base con todas las secciones
-- Sistema CSS completo (mobile-first, variables, componentes)
-- JavaScript funcional (navegación, galería, lightbox)
-- Assets básicos (favicon, logo SVG)
-- Archivos SEO (robots.txt, sitemap.xml)
-
----
-
-## Sesión 001 | 2026-01-28
-
-### Actividades realizadas
-- Creación de estructura inicial del repositorio
-- Documentación de inicio del proyecto
-- Preparación de archivos para Proyecto de Claude
-
----
-
-## Estructura Final del Proyecto
-
-```
-ARENILLA/
-├── src/                          # Código fuente
-│   ├── index.html                # Página principal
-│   ├── 404.html                  # Página de error
-│   ├── robots.txt                # SEO
-│   ├── sitemap.xml               # Mapa del sitio
-│   ├── css/
-│   │   └── styles.css            # ~1100 líneas
-│   ├── js/
-│   │   └── main.js               # ~350 líneas
+la-arenilla/
+├── docs/                          # Sitio web (GitHub Pages)
+│   ├── index.html
+│   ├── 404.html
+│   ├── robots.txt
+│   ├── sitemap.xml
+│   ├── css/styles.css
+│   ├── js/main.js
 │   └── assets/
 │       ├── favicon.svg
 │       └── img/
@@ -129,17 +71,15 @@ ARENILLA/
 │           ├── hero-desktop.svg
 │           ├── hero-mobile.svg
 │           ├── comunidad.svg
-│           └── galeria/          # 6 placeholders
-├── docs/
+│           └── galeria/ (6 placeholders)
+├── documentacion/                 # Docs del proyecto
 │   ├── BRIEF.md
 │   ├── REQUIREMENTS.md
-│   ├── SOLICITUD_INSUMOS.md      # Para enviar al cliente
+│   ├── SOLICITUD_INSUMOS.md
 │   ├── LISTA_MATERIALES_CLIENTE.md
 │   └── GUIA_USO_CLIENTE.md
 ├── claude-project/
-│   ├── INSTRUCTIONS.md
-│   └── KNOWLEDGE.md
-├── netlify.toml                  # Config hosting
+├── netlify.toml
 ├── .gitignore
 ├── PROJECT_LOG.md
 └── README.md
@@ -147,39 +87,71 @@ ARENILLA/
 
 ---
 
-## Próximos Pasos
+## Pendiente del Cliente
 
-1. **Enviar al cliente:**
-   - `docs/SOLICITUD_INSUMOS.md` (técnico)
-   - `docs/LISTA_MATERIALES_CLIENTE.md` (simplificado)
+### Urgente (para publicar versión final)
+- [ ] Número de WhatsApp real
+- [ ] Handle de Instagram
+- [ ] Coordenadas GPS exactas
+- [ ] Mínimo 10 fotografías
 
-2. **Mientras se espera:**
-   - Crear cuenta en Formspree
-   - Crear repositorio en GitHub
-   - Hacer deploy de prueba en Netlify
+### Importante
+- [ ] Precios de todos los servicios
+- [ ] Capacidad de cabaña y camping
+- [ ] Historia de la comunidad
+- [ ] Testimonios de visitantes
 
-3. **Cuando llegue el contenido:**
-   - Reemplazar placeholders con fotos reales
-   - Actualizar información de contacto
-   - Actualizar precios y detalles
-   - Configurar dominio personalizado
+### Documentos para enviar al cliente
+1. `documentacion/LISTA_MATERIALES_CLIENTE.md` - Checklist simple
+2. `documentacion/SOLICITUD_INSUMOS.md` - Especificaciones técnicas
 
 ---
 
-## Checklist de Entrega Final
+## Próximos Pasos
 
-### Antes de publicar
-- [ ] Fotos optimizadas (.webp con fallback .jpg)
-- [ ] Información de contacto real
-- [ ] Coordenadas GPS verificadas
-- [ ] Precios actualizados
-- [ ] ID de Formspree configurado
-- [ ] Prueba en móvil
-- [ ] Prueba en conexión lenta (3G)
-- [ ] Lighthouse score > 80
+### Cuando llegue el contenido del cliente:
+1. Reemplazar imágenes placeholder con fotos reales
+2. Actualizar información de contacto (WhatsApp, Instagram)
+3. Actualizar coordenadas GPS en el mapa
+4. Agregar precios y detalles de servicios
+5. Configurar Formspree con ID real
+6. Optimizar imágenes (WebP, max 200KB)
+7. Probar en dispositivos móviles
+8. Configurar dominio personalizado (si lo compran)
 
-### Post-publicación
-- [ ] Configurar Google My Business
-- [ ] Verificar en Google Search Console
-- [ ] Compartir en redes sociales
-- [ ] Entregar `docs/GUIA_USO_CLIENTE.md` al cliente
+### Dominio personalizado (opcional)
+El cliente mostró interés en dominios como `arenilla.org` o `arenilla.online`.
+- Precio estimado: $5-12 USD/año
+- Registradores recomendados: Namecheap, Porkbun
+- Configuración DNS documentada en la guía
+
+---
+
+## Historial de Sesiones
+
+| Sesión | Fecha | Actividades principales |
+|--------|-------|------------------------|
+| 001 | 2026-01-28 | Estructura inicial, documentación |
+| 002 | 2026-01-28 | Desarrollo base completo (HTML/CSS/JS) |
+| 003 | 2026-01-28 | Placeholders, formulario, deploy GitHub Pages |
+
+---
+
+## URLs Importantes
+
+- **Sitio público:** https://dstanziola.github.io/la-arenilla/
+- **Repositorio:** https://github.com/dstanziola/la-arenilla
+- **Settings Pages:** https://github.com/dstanziola/la-arenilla/settings/pages
+
+---
+
+## Notas Técnicas
+
+- GitHub Pages sirve desde `/docs` en rama `main`
+- Deploy automático en ~1 minuto tras cada push
+- Formspree requiere ID real antes de funcionar
+- Imágenes placeholder son SVG (se reemplazarán por JPG/WebP)
+
+---
+
+**Última actualización:** 2026-01-28

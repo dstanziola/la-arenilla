@@ -1373,7 +1373,92 @@ strong {
 }
 
 /* ==========================================================================
-   18. Media Queries adicionales
+   18. Estilos adicionales para precios y contacto
+   ========================================================================== */
+
+/* Precios en tarjetas de servicio */
+.servicio-card__precio {
+    font-size: var(--text-lg);
+    color: var(--color-primary);
+    margin: var(--space-3) 0;
+    padding: var(--space-2) 0;
+    border-top: 1px solid var(--color-bg-alt);
+}
+
+.servicio-card__precio strong {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+}
+
+.servicio-card__nota {
+    font-size: var(--text-sm);
+    color: var(--color-accent);
+    margin-bottom: var(--space-3);
+}
+
+/* Estilos de iconos de contacto por red social */
+.contacto__canal-icon--whatsapp {
+    background-color: rgba(37, 211, 102, 0.1);
+    color: var(--color-whatsapp);
+}
+
+.contacto__canal-icon--instagram {
+    background-color: rgba(225, 48, 108, 0.1);
+    color: #E1306C;
+}
+
+.contacto__canal-icon--facebook {
+    background-color: rgba(24, 119, 242, 0.1);
+    color: #1877F2;
+}
+
+.contacto__canal-icon--email {
+    background-color: rgba(45, 90, 39, 0.1);
+    color: var(--color-primary);
+}
+
+/* Horario en contacto */
+.contacto__horario {
+    margin-top: var(--space-6);
+    padding: var(--space-4);
+    background-color: var(--color-bg);
+    border-radius: var(--radius-md);
+}
+
+.contacto__horario h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-2);
+    color: var(--color-primary);
+}
+
+.contacto__horario-nota {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    margin-top: var(--space-2);
+}
+
+/* Alertas en ubicación */
+.ubicacion__alertas {
+    margin-top: var(--space-4);
+}
+
+.ubicacion__nota--importante {
+    background-color: rgba(232, 168, 56, 0.1);
+    border-left: 3px solid var(--color-accent);
+    padding: var(--space-3);
+    margin-bottom: var(--space-3);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+/* Horario en footer */
+.footer__horario {
+    font-size: var(--text-sm);
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: var(--space-2);
+}
+
+/* ==========================================================================
+   19. Media Queries adicionales
    ========================================================================== */
 
 /* Preferencia de movimiento reducido */
