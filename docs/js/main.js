@@ -9,6 +9,7 @@
  * - Filtros de galería
  * - Lightbox para imágenes
  * - Año actual en footer
+ * - Google Analytics 4 eventos personalizados
  */
 
 'use strict';
@@ -404,6 +405,108 @@ const initLazyLoading = () => {
 };
 
 // ==========================================================================
+// Google Analytics 4 - Eventos Personalizados
+// ==========================================================================
+
+/**
+ * Envía un evento a Google Analytics 4
+ * @param {string} eventName - Nombre del evento
+ * @param {Object} params - Parámetros adicionales
+ */
+const trackEvent = (eventName, params = {}) => {
+    if (typeof gtag === 'function') {
+        gtag('event', eventName, params);
+    }
+};
+
+const initAnalyticsTracking = () => {
+    // ----- Tracking de clics en WhatsApp -----
+    const whatsappLinks = $$('a[href*="wa.me"]');
+    
+    whatsappLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // Detectar servicio según el texto del mensaje (URL-encoded o normal)
+            const href = link.getAttribute('href');
+            let servicio = 'general';
+            
+            if (href.includes('caba%C3%B1a') || href.includes('cabaña')) servicio = 'cabana';
+            else if (href.includes('camping')) servicio = 'camping';
+            else if (href.includes('cascada')) servicio = 'tour_cascada';
+            else if (href.includes('Cerro')) servicio = 'tour_cerro';
+            else if (href.includes('comida')) servicio = 'comidas';
+            else if (href.includes('vivero') || href.includes('plantas')) servicio = 'vivero';
+            else if (href.includes('agr%C3%ADcolas') || href.includes('agrícolas')) servicio = 'productos';
+            else if (href.includes('planificar')) servicio = 'cta_final';
+            
+            // Detectar ubicación del botón
+            const isFloating = link.classList.contains('whatsapp-float');
+            const ubicacion = isFloating ? 'boton_flotante' : 'seccion';
+            
+            trackEvent('contacto_whatsapp', {
+                servicio: servicio,
+                ubicacion: ubicacion
+            });
+        });
+    });
+    
+    // ----- Tracking de envío del formulario -----
+    const contactForm = $('#contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', () => {
+            const servicioSelect = $('#servicio');
+            const servicioSeleccionado = servicioSelect?.value || 'no_especificado';
+            
+            trackEvent('formulario_enviado', {
+                servicio_interes: servicioSeleccionado
+            });
+        });
+    }
+    
+    // ----- Tracking de clics en mapas -----
+    const googleMapsLinks = $$('a[href*="maps.google.com"], a[href*="google.com/maps"]');
+    const wazeLinks = $$('a[href*="waze.com"]');
+    
+    googleMapsLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            trackEvent('abrir_mapa', { plataforma: 'google_maps' });
+        });
+    });
+    
+    wazeLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            trackEvent('abrir_mapa', { plataforma: 'waze' });
+        });
+    });
+    
+    // ----- Tracking de galería -----
+    const galleryItems = $$('.galeria__item');
+    
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const caption = $('figcaption', item)?.textContent || 'sin_titulo';
+            trackEvent('ver_imagen_galeria', { imagen: caption });
+        });
+    });
+    
+    // ----- Tracking de redes sociales -----
+    const instagramLinks = $$('a[href*="instagram.com"]');
+    const facebookLinks = $$('a[href*="facebook.com"]');
+    
+    instagramLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            trackEvent('clic_red_social', { red: 'instagram' });
+        });
+    });
+    
+    facebookLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            trackEvent('clic_red_social', { red: 'facebook' });
+        });
+    });
+};
+
+// ==========================================================================
 // Inicialización
 // ==========================================================================
 
@@ -416,6 +519,7 @@ domReady(() => {
     initCurrentYear();
     initSmoothScroll();
     initLazyLoading();
+    initAnalyticsTracking();
     
     console.log('🌿 La Arenilla - Sitio cargado correctamente');
 });
