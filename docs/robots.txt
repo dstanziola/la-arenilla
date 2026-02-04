@@ -1,8 +1,8 @@
 # Robots.txt para La Arenilla
-# https://laarenilla.com
+# https://arenilla.online
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://laarenilla.com/sitemap.xml
+Sitemap: https://arenilla.online/sitemap.xml
