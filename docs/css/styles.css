@@ -1500,3 +1500,111 @@ strong {
         color: black;
     }
 }
+
+/* ==========================================================================
+   20. Página de Galería
+   ========================================================================== */
+
+/* Encabezado de página interna */
+.page-header {
+    padding-top: calc(var(--header-height) + var(--space-12));
+    padding-bottom: var(--space-8);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: white;
+    text-align: center;
+}
+
+.page-header__title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    margin-bottom: var(--space-3);
+    color: var(--color-white);
+}
+
+.page-header__description {
+    font-size: var(--text-lg);
+    opacity: 0.9;
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+/* Filtros de galería */
+.galeria-filtros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-8);
+}
+
+.galeria-filtro {
+    padding: var(--space-2) var(--space-4);
+    border: 2px solid var(--color-primary);
+    background: transparent;
+    color: var(--color-primary);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.galeria-filtro:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.galeria-filtro.active {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* Grid de galería página completa */
+.galeria-page__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-4);
+}
+
+.galeria-page__grid .galeria__item {
+    aspect-ratio: 4 / 3;
+}
+
+.galeria-page__grid .galeria__item.hidden {
+    display: none;
+}
+
+/* Preview de galería en index */
+.galeria-preview__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+}
+
+@media (min-width: 768px) {
+    .galeria-preview__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.galeria-preview__more {
+    text-align: center;
+}
+
+/* Responsive para galería página */
+@media (max-width: 480px) {
+    .galeria-filtros {
+        gap: var(--space-1);
+    }
+    
+    .galeria-filtro {
+        padding: var(--space-1) var(--space-3);
+        font-size: var(--text-xs);
+    }
+    
+    .galeria-page__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-2);
+    }
+}

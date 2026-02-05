@@ -14,6 +14,44 @@
 
 ---
 
+## Sesión 005 | 2026-02-04
+
+### Resumen
+Implementación de eventos personalizados de Google Analytics 4 para tracking de conversiones.
+
+### Actividades realizadas
+
+#### 1. Revisión del Estado Actual
+- Verificado que el sitio ya tiene fotos reales (no placeholders)
+- Confirmado que Google Analytics (G-XRJ4J4N73L) ya estaba instalado
+
+#### 2. Implementación de Eventos GA4
+Agregada función `initAnalyticsTracking()` en `main.js` con los siguientes eventos:
+
+| Evento | Parámetros | Descripción |
+|--------|------------|-------------|
+| `contacto_whatsapp` | `servicio`, `ubicacion` | Clics en botones WhatsApp por servicio |
+| `formulario_enviado` | `servicio_interes` | Envíos del formulario de contacto |
+| `abrir_mapa` | `plataforma` | Clics en Google Maps / Waze |
+| `ver_imagen_galeria` | `imagen` | Apertura de fotos en lightbox |
+| `clic_red_social` | `red` | Clics a Instagram y Facebook |
+
+#### 3. Detalles Técnicos
+- Función helper `trackEvent()` para enviar eventos a gtag
+- Detección automática de servicio según URL del enlace WhatsApp
+- Soporte para caracteres URL-encoded (ñ, í, etc.)
+- Diferenciación entre botón flotante y botones en secciones
+
+### Archivos modificados
+- `docs/js/main.js` - Nueva sección de Analytics tracking
+
+### Próximos pasos recomendados
+- Esperar 24-48 horas para ver eventos en GA4
+- Marcar `contacto_whatsapp` y `formulario_enviado` como conversiones
+- Revisar Informes > Participación > Eventos
+
+---
+
 ## Sesión 004 | 2026-02-04
 
 ### Resumen
@@ -121,6 +159,7 @@ Estructura inicial y documentación del proyecto.
 | 002 | 2026-01-28 | Desarrollo base completo (HTML/CSS/JS) |
 | 003 | 2026-01-28 | Placeholders, formulario, deploy GitHub Pages |
 | 004 | 2026-02-04 | SEO, Search Console, cierre de proyecto |
+| 005 | 2026-02-04 | Eventos personalizados GA4 para tracking |
 
 ---
 
@@ -148,5 +187,5 @@ Estructura inicial y documentación del proyecto.
 
 ---
 
-**Última actualización:** 2026-02-04
-**Estado del proyecto:** ✅ COMPLETADO
+**Última actualización:** 2026-02-04 (Sesión 005)
+**Estado del proyecto:** ✅ COMPLETADO + Mejoras de Analytics

@@ -172,8 +172,9 @@ const initActiveNavOnScroll = () => {
 // ==========================================================================
 
 const initGalleryFilters = () => {
-    const filtros = $$('.galeria__filtro');
-    const items = $$('.galeria__item');
+    // Soporta ambas clases: .galeria__filtro (index) y .galeria-filtro (página galería)
+    const filtros = $('.galeria__filtro, .galeria-filtro');
+    const items = $('.galeria__item');
     
     if (!filtros.length || !items.length) return;
     
@@ -185,7 +186,7 @@ const initGalleryFilters = () => {
             filtros.forEach(f => f.classList.remove('active'));
             filtro.classList.add('active');
             
-            // Filtrar items
+            // Filtrar items con animación
             items.forEach(item => {
                 const category = item.dataset.category;
                 
@@ -197,6 +198,11 @@ const initGalleryFilters = () => {
                     item.style.display = 'none';
                 }
             });
+            
+            // Track en Analytics
+            if (typeof trackEvent === 'function') {
+                trackEvent('filtro_galeria', { categoria: filter });
+            }
         });
     });
 };

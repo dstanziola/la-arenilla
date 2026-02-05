@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XRJ4J4N73L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XRJ4J4N73L');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galería de fotos de La Arenilla - Cascada, orquídeas, vivero, productos agrícolas y actividades comunitarias en Capira, Panamá Oeste.">
+    <meta name="keywords" content="fotos La Arenilla, galería turismo rural Panamá, orquídeas Panamá, cascada Capira, ecoturismo fotos">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Galería de Fotos - La Arenilla">
+    <meta property="og:description" content="Descubre la belleza natural de La Arenilla: cascada, orquídeas, vivero y la vida comunitaria de Capira.">
+    <meta property="og:image" content="assets/img/hero.jpg">
+    <meta property="og:url" content="https://arenilla.online/galeria.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Galería de Fotos | La Arenilla - Turismo Rural en Capira</title>
+</head>
+<body>
+    <!-- Navegación Principal -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/img/logo.svg" alt="La Arenilla" class="nav__logo-img">
+                <span class="nav__logo-text">La Arenilla</span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#inicio" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#servicios" class="nav__link">Servicios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="galeria.html" class="nav__link active">Galería</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#ubicacion" class="nav__link">Cómo Llegar</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#nosotros" class="nav__link">Nosotros</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#contacto" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+                
+                <button class="nav__close" id="nav-close" aria-label="Cerrar menú">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Encabezado de Galería -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Galería de Fotos</h1>
+                <p class="page-header__description">
+                    Descubre la belleza natural de La Arenilla a través de nuestras imágenes
+                </p>
+            </div>
+        </section>
+
+        <!-- Filtros -->
+        <section class="galeria-page section">
+            <div class="container">
+                <div class="galeria-filtros">
+                    <button class="galeria-filtro active" data-filter="todos">Todos</button>
+                    <button class="galeria-filtro" data-filter="paisajes">Paisajes</button>
+                    <button class="galeria-filtro" data-filter="vivero">Vivero</button>
+                    <button class="galeria-filtro" data-filter="comunidad">Comunidad</button>
+                    <button class="galeria-filtro" data-filter="productos">Productos</button>
+                    <button class="galeria-filtro" data-filter="gastronomia">Gastronomía</button>
+                </div>
+                
+                <div class="galeria-page__grid">
+                    <!-- PAISAJES -->
+                    <figure class="galeria__item" data-category="paisajes">
+                        <img src="assets/img/galeria/cascada-aerea.jpg" 
+                             alt="Vista aérea de la cascada de La Arenilla" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Cascada de La Arenilla</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="paisajes">
+                        <img src="assets/img/hero.jpg" 
+                             alt="Vista panorámica de la cascada" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Vista Panorámica</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="paisajes">
+                        <img src="assets/img/galeria/entrada.jpg" 
+                             alt="Entrada a La Arenilla con vista a las montañas" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Entrada a La Arenilla</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="paisajes">
+                        <img src="assets/img/galeria/rio_arenilla.webp" 
+                             alt="Río Arenilla entre la vegetación" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Río Arenilla</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="paisajes">
+                        <img src="assets/img/galeria/rio_arenilla2.webp" 
+                             alt="Aguas cristalinas del Río Arenilla" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Aguas Cristalinas</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="paisajes">
+                        <img src="assets/img/galeria/senderos.webp" 
+                             alt="Senderos naturales en La Arenilla" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Senderos Naturales</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="paisajes">
+                        <img src="assets/img/galeria/visitantes_en_la_cascada.webp" 
+                             alt="Visitantes disfrutando de la cascada" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Visitantes en la Cascada</figcaption>
+                    </figure>
+                    
+                    <!-- VIVERO Y ORQUÍDEAS -->
+                    <figure class="galeria__item" data-category="vivero">
+                        <img src="assets/img/galeria/orquidea_flor_del_espiritu_santo.webp" 
+                             alt="Orquídea Flor del Espíritu Santo - Flor Nacional de Panamá" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Flor del Espíritu Santo</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="vivero">
+                        <img src="assets/img/galeria/orquidea_sobralia.webp" 
+                             alt="Orquídea Sobralia blanca" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Orquídea Sobralia</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="vivero">
+                        <img src="assets/img/galeria/orquidea_migdonia.webp" 
+                             alt="Orquídea Migdonia" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Orquídea Migdonia</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="vivero">
+                        <img src="assets/img/galeria/vivero-comunidad.webp" 
+                             alt="Niños de la comunidad en el vivero" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Nuestro Vivero</figcaption>
+                    </figure>
+                    
+                    <!-- COMUNIDAD -->
+                    <figure class="galeria__item" data-category="comunidad">
+                        <img src="assets/img/galeria/letrero.jpg" 
+                             alt="Letrero de la Asociación Agro Eco Turística" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Nuestra Asociación</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="comunidad">
+                        <img src="assets/img/comunidad.jpg" 
+                             alt="Letrero de bienvenida a La Arenilla" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Bienvenidos</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="comunidad">
+                        <img src="assets/img/galeria/comunidad-tipico.webp" 
+                             alt="Niños con vestimenta típica panameña" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Tradiciones Vivas</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="comunidad">
+                        <img src="assets/img/galeria/comunidad-tipico-2.webp" 
+                             alt="Niños bailando con trajes típicos" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Cultura Panameña</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="comunidad">
+                        <img src="assets/img/galeria/cabana.jpg" 
+                             alt="Cabaña rústica con techo de palma" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Cabaña Rústica</figcaption>
+                    </figure>
+                    
+                    <!-- PRODUCTOS -->
+                    <figure class="galeria__item" data-category="productos">
+                        <img src="assets/img/galeria/productos_locales.webp" 
+                             alt="Productos agrícolas locales frescos" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Productos Locales</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="productos">
+                        <img src="assets/img/galeria/productos_locales_aji_trompito.webp" 
+                             alt="Ají trompito cultivado localmente" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Ají Trompito</figcaption>
+                    </figure>
+                    
+                    <figure class="galeria__item" data-category="productos">
+                        <img src="assets/img/galeria/huerto_de_culantro.webp" 
+                             alt="Huerto de culantro fresco" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Huerto de Culantro</figcaption>
+                    </figure>
+                    
+                    <!-- GASTRONOMÍA -->
+                    <figure class="galeria__item" data-category="gastronomia">
+                        <img src="assets/img/galeria/fogon.webp" 
+                             alt="Fogón de leña tradicional para cocinar" 
+                             class="galeria__img"
+                             loading="lazy">
+                        <figcaption class="galeria__caption">Fogón de Leña</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">¿Te gustaría vivir esta experiencia?</h2>
+                    <p class="cta__description">
+                        Contáctanos y planifica tu visita a La Arenilla.
+                    </p>
+                    <a href="https://wa.me/50766455881?text=Hola,%20vi%20la%20galería%20y%20me%20interesa%20visitar%20La%20Arenilla" 
+                       class="btn btn--primary btn--large" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Escríbenos por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <img src="assets/img/logo.svg" alt="La Arenilla" class="footer__logo-img">
+                        <span class="footer__logo-text">La Arenilla</span>
+                    </a>
+                    <p class="footer__tagline">
+                        Turismo rural comunitario en el corazón de Panamá Oeste
+                    </p>
+                </div>
+                
+                <nav class="footer__nav">
+                    <h4 class="footer__nav-title">Enlaces</h4>
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html#inicio">Inicio</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="index.html#ubicacion">Cómo Llegar</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footer__contacto">
+                    <h4 class="footer__nav-title">Contacto</h4>
+                    <ul class="footer__contacto-list">
+                        <li>
+                            <a href="https://wa.me/50766455881" target="_blank" rel="noopener noreferrer">
+                                +507 6645-5881
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/arenilladecapira" target="_blank" rel="noopener noreferrer">
+                                @arenilladecapira
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contacto@arenilla.online">
+                                contacto@arenilla.online
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; <span id="current-year">2026</span> Asociación Agro Eco Turística de La Arenilla.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/50766455881?text=Hola,%20me%20interesa%20visitar%20La%20Arenilla" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- Lightbox para galería -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imagen">
+        <button class="lightbox__close" aria-label="Cerrar">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <button class="lightbox__prev" aria-label="Imagen anterior">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <button class="lightbox__next" aria-label="Siguiente imagen">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+        <div class="lightbox__content">
+            <img src="" alt="" class="lightbox__img">
+            <p class="lightbox__caption"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
