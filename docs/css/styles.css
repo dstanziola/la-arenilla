@@ -1570,8 +1570,9 @@ strong {
     aspect-ratio: 4 / 3;
 }
 
-.galeria-page__grid .galeria__item.hidden {
-    display: none;
+/* Ocultar items filtrados */
+.galeria__item.hidden {
+    display: none !important;
 }
 
 /* Preview de galería en index */

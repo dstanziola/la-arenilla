@@ -186,16 +186,14 @@ const initGalleryFilters = () => {
             filtros.forEach(f => f.classList.remove('active'));
             filtro.classList.add('active');
             
-            // Filtrar items con animación
+            // Filtrar items (solo con clases CSS)
             items.forEach(item => {
                 const category = item.dataset.category;
                 
                 if (filter === 'todos' || category === filter) {
                     item.classList.remove('hidden');
-                    item.style.display = '';
                 } else {
                     item.classList.add('hidden');
-                    item.style.display = 'none';
                 }
             });
             
