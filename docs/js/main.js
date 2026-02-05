@@ -173,8 +173,8 @@ const initActiveNavOnScroll = () => {
 
 const initGalleryFilters = () => {
     // Soporta ambas clases: .galeria__filtro (index) y .galeria-filtro (página galería)
-    const filtros = $('.galeria__filtro, .galeria-filtro');
-    const items = $('.galeria__item');
+    const filtros = $$('.galeria__filtro, .galeria-filtro');
+    const items = $$('.galeria__item');
     
     if (!filtros.length || !items.length) return;
     
