@@ -35,3 +35,4 @@ tmp/
 # Environment
 .env
 .env.local
+*.zip
