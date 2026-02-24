@@ -1691,6 +1691,11 @@ strong {
     aspect-ratio: 4 / 3;
 }
 
+/* Imágenes verticales en galería */
+.galeria-page__grid .galeria__item--vertical {
+    aspect-ratio: 3 / 4;
+}
+
 /* Ocultar items filtrados */
 .galeria__item.hidden {
     display: none !important;
