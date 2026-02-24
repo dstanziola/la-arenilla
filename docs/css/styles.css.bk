@@ -900,32 +900,18 @@ strong {
 /* ==========================================================================
    12. Nosotros
    ========================================================================== */
-
-/* Bloques alternados texto/imagen */
-.nosotros__bloque {
+.nosotros__content {
     display: grid;
     gap: var(--space-8);
     align-items: center;
-    margin-bottom: var(--space-12);
 }
 
 @media (min-width: 1024px) {
-    .nosotros__bloque {
+    .nosotros__content {
         grid-template-columns: 1fr 1fr;
-    }
-    /* Bloque inverso: texto primero en DOM, imagen visualmente a la derecha */
-    .nosotros__bloque--reverse {
-        grid-template-columns: 1fr 1fr;
-    }
-    .nosotros__bloque--reverse .nosotros__texto {
-        order: 1;
-    }
-    .nosotros__bloque--reverse .nosotros__imagen {
-        order: 2;
     }
 }
 
-/* Imagen compartida */
 .nosotros__imagen {
     border-radius: var(--radius-lg);
     overflow: hidden;
@@ -939,33 +925,18 @@ strong {
     aspect-ratio: 4/3;
 }
 
-/* Subtítulo de bloque */
-.nosotros__subtitulo {
-    font-size: var(--text-2xl);
-    margin-bottom: var(--space-4);
-    color: var(--color-text);
-}
-
-@media (min-width: 768px) {
-    .nosotros__subtitulo {
-        font-size: var(--text-3xl);
-    }
-}
-
-/* Texto */
 .nosotros__texto p {
     color: var(--color-text-light);
     margin-bottom: var(--space-4);
 }
 
-/* Estadísticas */
 .nosotros__valores {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-4);
     margin-top: var(--space-6);
     padding-top: var(--space-6);
-    border-top: 1px solid rgba(0,0,0,0.08);
+    border-top: 1px solid var(--color-bg-alt);
 }
 
 .nosotros__valor {
@@ -983,98 +954,6 @@ strong {
 .nosotros__valor-texto {
     font-size: var(--text-sm);
     color: var(--color-text-light);
-}
-
-/* --- Junta Directiva --- */
-.nosotros__junta {
-    margin-top: var(--space-4);
-    padding-top: var(--space-12);
-    border-top: 1px solid rgba(0,0,0,0.08);
-}
-
-.nosotros__junta-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-4);
-}
-
-@media (min-width: 640px) {
-    .nosotros__junta-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .nosotros__junta-grid {
-        grid-template-columns: repeat(6, 1fr);
-    }
-}
-
-/* Tarjeta de persona */
-.nosotros__persona-card {
-    background-color: var(--color-white);
-    border-radius: var(--radius-lg);
-    padding: var(--space-4);
-    text-align: center;
-    box-shadow: var(--shadow-sm);
-    transition: transform var(--transition-base), box-shadow var(--transition-base);
-}
-
-.nosotros__persona-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
-}
-
-/* Foto circular */
-.nosotros__persona-foto {
-    width: 80px;
-    height: 80px;
-    border-radius: var(--radius-full);
-    overflow: hidden;
-    margin: 0 auto var(--space-3);
-    background-color: var(--color-bg-alt);
-}
-
-.nosotros__persona-foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-}
-
-/* Placeholder sin foto */
-.nosotros__persona-foto--placeholder,
-.nosotros__persona-foto--grupo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-text-muted);
-}
-
-.nosotros__persona-foto--grupo {
-    background-color: rgba(45, 90, 39, 0.08);
-    color: var(--color-primary);
-}
-
-.nosotros__persona-nombre {
-    font-weight: var(--font-semibold);
-    font-size: var(--text-sm);
-    color: var(--color-text);
-    margin-bottom: var(--space-1);
-}
-
-.nosotros__persona-cargo {
-    font-size: var(--text-xs);
-    color: var(--color-primary);
-    font-weight: var(--font-medium);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-/* Tarjeta especial "más miembros" */
-.nosotros__persona-card--mas {
-    background-color: rgba(45, 90, 39, 0.05);
-    border: 2px dashed rgba(45, 90, 39, 0.2);
 }
 
 /* ==========================================================================

@@ -513,177 +513,52 @@
         <!-- Nosotros -->
         <section class="nosotros section section--alt" id="nosotros">
             <div class="container">
-
-                <!-- Encabezado -->
-                <header class="section__header">
-                    <span class="section__badge">Nuestra Historia</span>
-                    <h2 class="section__title">Sobre Nosotros</h2>
-                    <p class="section__description">
-                        Una comunidad que nació de la tierra, se organizó por sus familias 
-                        y hoy abre sus puertas al mundo.
-                    </p>
-                </header>
-
-                <!-- Bloque 1: La Comunidad -->
-                <div class="nosotros__bloque">
+                <div class="nosotros__content">
                     <div class="nosotros__imagen">
-                        <img src="assets/img/nosotros/comunidad_camino.jpg"
-                             alt="Camino de entrada a La Arenilla entre montañas"
+                        <img src="assets/img/comunidad.jpg" 
+                             alt="Letrero de la Asociación Agro Eco Turística de La Arenilla" 
                              loading="lazy">
                     </div>
+                    
                     <div class="nosotros__texto">
                         <header class="section__header section__header--left">
-                            <span class="section__badge">La Comunidad</span>
-                            <h3 class="nosotros__subtitulo">La Arenilla, desde 1999</h3>
+                            <span class="section__badge">Nuestra Historia</span>
+                            <h2 class="section__title">Sobre Nosotros</h2>
                         </header>
+                        
                         <p>
-                            Anidada entre las montañas de Cirí Grande, en el distrito de Capira, 
-                            la comunidad de La Arenilla nació en 1999. Sus primeros 
-                            pobladores, <strong>Silvestre Morán y Martina Chirú</strong>, 
-                            abrieron el camino a las más de 200 personas que hoy la habitan 
-                            en 39 familias dedicadas a cultivar la tierra.
+                            Somos la <strong>Asociación Agro Eco Turística de La Arenilla</strong>, 
+                            fundada el <strong>31 de mayo de 2021</strong>. Una comunidad rural unida 
+                            por el amor a nuestra tierra y el deseo de compartir sus tesoros con el mundo.
                         </p>
                         <p>
-                            El visitante llega después de tres horas desde la ciudad, 
-                            recorriendo caminos de terracería entre elevaciones, cafetales 
-                            en flor y ríos de aguas limpias. Ese viaje ya es parte de la 
-                            experiencia: un regreso a las raíces, a la comida hecha en fogón 
-                            de leña y a los alimentos en su expresión más fresca y natural.
+                            Ubicados en las montañas de Capira, hemos trabajado juntos para 
+                            desarrollar un turismo que beneficia directamente a nuestras familias 
+                            mientras preservamos el medio ambiente y nuestras tradiciones.
                         </p>
                         <p>
-                            La comunidad vive de la <strong>agricultura de subsistencia</strong>: 
-                            café Robusta, culantro, plátano y árboles frutales. El Cerro Negro 
-                            —el punto más alto de Panamá Oeste con 1,049 metros— y la cascada 
-                            más alta de la provincia son los guardianes naturales de este 
-                            rincón que el turismo comienza a descubrir.
+                            Nuestra cascada es el corazón de La Arenilla. Cada servicio que ofrecemos 
+                            es preparado con cariño por miembros de nuestra comunidad. Cuando nos visitas, 
+                            apoyas el desarrollo sostenible de nuestras familias.
                         </p>
-                    </div>
-                </div>
-
-                <!-- Bloque 2: La Asociación -->
-                <div class="nosotros__bloque nosotros__bloque--reverse">
-                    <div class="nosotros__texto">
-                        <header class="section__header section__header--left">
-                            <span class="section__badge">La Asociación</span>
-                            <h3 class="nosotros__subtitulo">Unidos para crecer</h3>
-                        </header>
-                        <p>
-                            El <strong>5 de mayo de 2021</strong>, 30 familias formalizaron 
-                            lo que ya venían construyendo juntos: la 
-                            <strong>Asociación Agro Eco Turística de La Arenilla</strong>, 
-                            organización sin fines de lucro con personería jurídica, liderada 
-                            por jóvenes con activa participación de las mujeres de la comunidad.
-                        </p>
-                        <p>
-                            Opera a través de <strong>siete comités de trabajo</strong>: 
-                            guías locales, limpieza y aseo, control de atractivos, comité 
-                            organizador, productores, cocina y proyectos comunitarios. 
-                            Esta estructura garantiza que cada visita sea una experiencia 
-                            organizada y que los beneficios lleguen directamente a las familias.
-                        </p>
-                        <p>
-                            Entre sus logros: la construcción de la cabaña comunitaria, 
-                            el mantenimiento de senderos, un fondo solidario de apoyo médico 
-                            y el vivero de plantas nativas con capacidad para 1,000 plantones. 
-                            Cada balboa que genera el turismo se queda en la comunidad.
-                        </p>
+                        
                         <div class="nosotros__valores">
                             <div class="nosotros__valor">
-                                <span class="nosotros__valor-numero">30</span>
-                                <span class="nosotros__valor-texto">Familias miembro</span>
-                            </div>
-                            <div class="nosotros__valor">
-                                <span class="nosotros__valor-numero">7</span>
-                                <span class="nosotros__valor-texto">Comités activos</span>
+                                <span class="nosotros__valor-numero">100%</span>
+                                <span class="nosotros__valor-texto">Comunitario</span>
                             </div>
                             <div class="nosotros__valor">
                                 <span class="nosotros__valor-numero">2021</span>
                                 <span class="nosotros__valor-texto">Fundación</span>
                             </div>
+                            <div class="nosotros__valor">
+                                <span class="nosotros__valor-numero">8am-3pm</span>
+                                <span class="nosotros__valor-texto">Horario</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="nosotros__imagen">
-                        <img src="assets/img/nosotros/asociacion_junta.jpg"
-                             alt="Miembros de la Asociación Agro Eco Turística de La Arenilla reunidos"
-                             loading="lazy">
-                    </div>
                 </div>
-
-                <!-- Bloque 3: Las Personas -->
-                <div class="nosotros__junta">
-                    <header class="section__header">
-                        <span class="section__badge">Las Personas</span>
-                        <h3 class="nosotros__subtitulo">Junta Directiva y Guías</h3>
-                        <p class="section__description">
-                            Cuando visitas La Arenilla, estas son las personas que te reciben.
-                        </p>
-                    </header>
-                    <div class="nosotros__junta-grid">
-
-                        <article class="nosotros__persona-card">
-                            <div class="nosotros__persona-foto">
-                                <img src="assets/img/nosotros/junta_presidente_tesorero.jpg"
-                                     alt="Presidente de la Asociación" loading="lazy">
-                            </div>
-                            <p class="nosotros__persona-nombre">[Nombre por confirmar]</p>
-                            <p class="nosotros__persona-cargo">Presidente</p>
-                        </article>
-
-                        <article class="nosotros__persona-card">
-                            <div class="nosotros__persona-foto">
-                                <img src="assets/img/nosotros/junta_presidente_tesorero.jpg"
-                                     alt="Tesorero/a de la Asociación" loading="lazy">
-                            </div>
-                            <p class="nosotros__persona-nombre">[Nombre por confirmar]</p>
-                            <p class="nosotros__persona-cargo">Tesorero/a</p>
-                        </article>
-
-                        <article class="nosotros__persona-card">
-                            <div class="nosotros__persona-foto nosotros__persona-foto--placeholder">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                                    <circle cx="12" cy="7" r="4"/>
-                                </svg>
-                            </div>
-                            <p class="nosotros__persona-nombre">[Nombre por confirmar]</p>
-                            <p class="nosotros__persona-cargo">Secretario/a</p>
-                        </article>
-
-                        <article class="nosotros__persona-card">
-                            <div class="nosotros__persona-foto">
-                                <img src="assets/img/nosotros/guia_jenry.jpg"
-                                     alt="Jenry, guía turístico de La Arenilla" loading="lazy">
-                            </div>
-                            <p class="nosotros__persona-nombre">Jenry</p>
-                            <p class="nosotros__persona-cargo">Guía Turístico</p>
-                        </article>
-
-                        <article class="nosotros__persona-card">
-                            <div class="nosotros__persona-foto">
-                                <img src="assets/img/nosotros/joven_comunidad.jpg"
-                                     alt="Joven integrante de la comunidad" loading="lazy">
-                            </div>
-                            <p class="nosotros__persona-nombre">[Nombre por confirmar]</p>
-                            <p class="nosotros__persona-cargo">Miembro activo</p>
-                        </article>
-
-                        <article class="nosotros__persona-card nosotros__persona-card--mas">
-                            <div class="nosotros__persona-foto nosotros__persona-foto--grupo">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                    <circle cx="9" cy="7" r="4"/>
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                                </svg>
-                            </div>
-                            <p class="nosotros__persona-nombre">30 familias</p>
-                            <p class="nosotros__persona-cargo">nos respaldan</p>
-                        </article>
-
-                    </div><!-- /nosotros__junta-grid -->
-                </div><!-- /nosotros__junta -->
-
-            </div><!-- /container -->
+            </div>
         </section>
 
         <!-- Contacto -->
@@ -738,7 +613,7 @@
                                 </div>
                             </a>
                             
-                            <a href="/cdn-cgi/l/email-protection#14777b7a607577607b547566717a7d7878753a7b7a787d7a71" class="contacto__canal">
+                            <a href="mailto:contacto@arenilla.online" class="contacto__canal">
                                 <div class="contacto__canal-icon contacto__canal-icon--email">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -747,7 +622,7 @@
                                 </div>
                                 <div class="contacto__canal-text">
                                     <span class="contacto__canal-label">Email</span>
-                                    <span class="contacto__canal-value"><span class="__cf_email__" data-cfemail="02616d6c766361766d426370676c6b6e6e632c6d6c6e6b6c67">[email&#160;protected]</span></span>
+                                    <span class="contacto__canal-value">contacto@arenilla.online</span>
                                 </div>
                             </a>
                         </div>
@@ -889,12 +764,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/cdn-cgi/l/email-protection#fd9e9293899c9e8992bd9c8f98939491919cd3929391949398">
+                            <a href="mailto:contacto@arenilla.online">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                                     <polyline points="22,6 12,13 2,6"/>
                                 </svg>
-                                <span class="__cf_email__" data-cfemail="23404c4d574240574c634251464d4a4f4f420d4c4d4f4a4d46">[email&#160;protected]</span>
+                                contacto@arenilla.online
                             </a>
                         </li>
                     </ul>
@@ -937,3 +812,15 @@
         <button class="lightbox__next" aria-label="Siguiente imagen">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+        <div class="lightbox__content">
+            <img src="" alt="" class="lightbox__img">
+            <p class="lightbox__caption"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
