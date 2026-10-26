@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-PA">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XRJ4J4N73L"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XRJ4J4N73L');
-    </script>
-    
+
+    <!-- Medición solo con permiso: js/consentimiento.js carga Google Analytics después de «Aceptar» -->
+    <script src="js/consentimiento.js"></script>
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="La Arenilla - Turismo rural comunitario en Capira, Panamá Oeste. Cascada, cabaña, camping, guías turísticos, comidas criollas y productos agrícolas frescos.">
+    <meta name="description" content="Turismo rural comunitario en La Arenilla, Capira, Panamá Oeste: cascada, cabaña, camping, guías, comida criolla y productos del campo. WhatsApp 6645-5881.">
     <meta name="keywords" content="turismo rural Panamá, ecoturismo Capira, camping Panamá Oeste, agroturismo Panamá, cabaña rural Panamá, cascada La Arenilla">
     <meta name="author" content="Asociación Agro Eco Turística de La Arenilla">
     <meta name="robots" content="index, follow">
@@ -20,7 +16,9 @@
     <!-- Open Graph -->
     <meta property="og:title" content="La Arenilla - Turismo Rural Comunitario">
     <meta property="og:description" content="Vive la experiencia del campo panameño. Cascada, cabaña, camping, guías turísticos y gastronomía criolla en Capira.">
-    <meta property="og:image" content="assets/img/hero.jpg">
+    <meta property="og:image" content="https://arenilla.online/assets/img/og-arenilla-1200x630.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://arenilla.online/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_PA">
@@ -41,7 +39,7 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "TouristAttraction",
+        "@type": ["LodgingBusiness", "TouristAttraction"],
         "name": "Asociación Agro Eco Turística de La Arenilla",
         "description": "Turismo rural comunitario con cascada, cabaña, camping, guías turísticos y gastronomía criolla en Capira, Panamá Oeste.",
         "address": {
@@ -59,7 +57,8 @@
         "telephone": "+507-6645-5881",
         "email": "contacto@arenilla.online",
         "priceRange": "$",
-        "image": "assets/img/hero.jpg",
+        "image": "https://arenilla.online/assets/img/hero.jpg",
+        "url": "https://arenilla.online/",
         "sameAs": [
             "https://instagram.com/arenilladecapira",
             "https://www.facebook.com/100057382001965"
@@ -113,6 +112,8 @@
                 </button>
             </div>
             
+            <a href="https://wa.me/50766455881?text=Hola,%20me%20interesa%20visitar%20La%20Arenilla" class="nav__wa" target="_blank" rel="noopener noreferrer">WhatsApp<span class="nav__wa-num"> 6645-5881</span></a>
+
             <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -141,6 +142,7 @@
                     Escápate a nuestra cascada, hospédate en la cabaña y disfruta 
                     de la gastronomía criolla en el corazón de Capira.
                 </p>
+                <p class="hero__datos">Abierto todos los días de 8:00 a. m. a 3:00 p. m. · Cirí Grande, Capira · WhatsApp 6645-5881</p>
                 <div class="hero__actions">
                     <a href="#servicios" class="btn btn--primary">Explorar Servicios</a>
                     <a href="https://wa.me/50766455881?text=Hola,%20me%20interesa%20visitar%20La%20Arenilla" 
@@ -171,6 +173,7 @@
                     <p class="section__description">
                         Experiencias auténticas preparadas con cariño por nuestra comunidad
                     </p>
+                    <p class="section__nota-precios">Precios de octubre de 2026, en dólares.</p>
                 </header>
                 
                 <div class="servicios__grid">
@@ -695,7 +698,7 @@
                         <article class="nosotros__persona-card">
                             <div class="nosotros__persona-foto">
                                 <img src="assets/img/nosotros/Tesorero.jpg"
-                                     alt="Tesorero" loading="lazy">
+                                     alt="Ernesto Chirú, tesorero" loading="lazy">
                             </div>
                             <p class="nosotros__persona-nombre">Ernesto Chirú</p>
                             <p class="nosotros__persona-cargo">Tesorero</p>
@@ -704,7 +707,7 @@
                         <article class="nosotros__persona-card">
                             <div class="nosotros__persona-foto nosotros__persona-foto--placeholder">
                                 <img src="assets/img/nosotros/Yasmina_Martinez-Vocal.jpg"
-                                     alt="Secretario/a" loading="lazy">
+                                     alt="Yasmina Martínez, secretaria de actas" loading="lazy">
                             </div>
                             <p class="nosotros__persona-nombre">Yasmina Martínez</p>
                             <p class="nosotros__persona-cargo">Secretaria de Actas</p>
@@ -796,7 +799,7 @@
                                 </div>
                             </a>
                             
-                            <a href="/cdn-cgi/l/email-protection#14777b7a607577607b547566717a7d7878753a7b7a787d7a71" class="contacto__canal">
+                            <a href="mailto:contacto@arenilla.online" class="contacto__canal">
                                 <div class="contacto__canal-icon contacto__canal-icon--email">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -805,7 +808,7 @@
                                 </div>
                                 <div class="contacto__canal-text">
                                     <span class="contacto__canal-label">Email</span>
-                                    <span class="contacto__canal-value"><span class="__cf_email__" data-cfemail="02616d6c766361766d426370676c6b6e6e632c6d6c6e6b6c67">[email&#160;protected]</span></span>
+                                    <span class="contacto__canal-value">contacto@arenilla.online</span>
                                 </div>
                             </a>
                         </div>
@@ -870,6 +873,7 @@
                         <p class="form__note">
                             * Campos requeridos. Responderemos en menos de 24 horas.
                         </p>
+                        <p class="form__note">Tus datos se envían por Formspree, un servicio en Estados Unidos, solo para responder tu consulta. Más en la <a href="privacidad.html">Política de privacidad</a>.</p>
                     </div>
                 </div>
             </div>
@@ -916,7 +920,7 @@
                 </div>
                 
                 <nav class="footer__nav">
-                    <h4 class="footer__nav-title">Enlaces</h4>
+                    <h3 class="footer__nav-title">Enlaces</h3>
                     <ul class="footer__nav-list">
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#servicios">Servicios</a></li>
@@ -928,7 +932,7 @@
                 </nav>
                 
                 <div class="footer__contacto">
-                    <h4 class="footer__nav-title">Contacto</h4>
+                    <h3 class="footer__nav-title">Contacto</h3>
                     <ul class="footer__contacto-list">
                         <li>
                             <a href="https://wa.me/50766455881" target="_blank" rel="noopener noreferrer">
@@ -947,12 +951,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/cdn-cgi/l/email-protection#fd9e9293899c9e8992bd9c8f98939491919cd3929391949398">
+                            <a href="mailto:contacto@arenilla.online">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                                     <polyline points="22,6 12,13 2,6"/>
                                 </svg>
-                                <span class="__cf_email__" data-cfemail="23404c4d574240574c634251464d4a4f4f420d4c4d4f4a4d46">[email&#160;protected]</span>
+                                contacto@arenilla.online
                             </a>
                         </li>
                     </ul>
@@ -964,6 +968,7 @@
                     &copy; <span id="current-year">2026</span> Asociación Agro Eco Turística de La Arenilla. 
                     Todos los derechos reservados.
                 </p>
+                <p class="footer__legal"><a href="privacidad.html">Política de privacidad</a> · <button type="button" class="footer__cookies" data-preferencias-cookies>Preferencias de cookies</button></p>
             </div>
         </div>
     </footer>
@@ -995,3 +1000,15 @@
         <button class="lightbox__next" aria-label="Siguiente imagen">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+        <div class="lightbox__content">
+            <img src="" alt="" class="lightbox__img">
+            <p class="lightbox__caption"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>

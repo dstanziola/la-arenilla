@@ -40,7 +40,7 @@
     
     --color-text: #2C2C2C;
     --color-text-light: #5A5A5A;
-    --color-text-muted: #888888;
+    --color-text-muted: #666666;
     
     --color-bg: #FAFAF8;
     --color-bg-alt: #F0EDE8;
@@ -1513,7 +1513,7 @@ strong {
 
 .servicio-card__nota {
     font-size: var(--text-sm);
-    color: var(--color-accent);
+    color: var(--color-secondary);
     margin-bottom: var(--space-3);
 }
 
@@ -1730,3 +1730,30 @@ strong {
         gap: var(--space-2);
     }
 }
+
+
+/* ===== Correcciones del 26-oct-2026 (estándar de sitios de la cartera) ===== */
+.footer__nav-title { color: var(--color-white); }
+.footer__legal { margin-top: var(--space-2); font-size: var(--text-sm); }
+.footer__legal a, .footer__cookies { color: var(--color-white); text-decoration: underline; }
+.footer__cookies { background: none; border: 0; padding: 0; font: inherit; cursor: pointer; min-height: 24px; }
+.nav__wa { margin-left: auto; margin-right: 12px; background: var(--color-whatsapp); color: #0B2C1E; font-weight: 700; padding: 8px 14px; border-radius: 999px; text-decoration: none; white-space: nowrap; font-size: 15px; }
+.nav__wa:hover { background: #1EBE5A; color: #0B2C1E; }
+.hero__datos { color: #FFFFFF; font-weight: 600; margin-top: 12px; }
+.section__nota-precios { margin-top: 8px; color: var(--color-text-light); font-size: var(--text-sm); }
+.privacidad { padding-top: calc(var(--header-height) + var(--space-8)); }
+.privacidad__contenido { max-width: 760px; }
+.privacidad__contenido h2 { font-size: 1.35rem; margin-top: 1.6em; margin-bottom: .5em; }
+.privacidad__contenido ul { padding-left: 1.2em; list-style: disc; }
+.privacidad__contenido p, .privacidad__contenido li { margin-bottom: .6em; line-height: 1.6; }
+.privacidad__contenido a { color: var(--color-primary); text-decoration: underline; }
+.consentimiento { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 2000; max-width: 720px; margin: 0 auto; background: #FFFFFF; color: var(--color-text); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.25); padding: 16px 18px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; font-size: 15px; line-height: 1.5; }
+.consentimiento p { margin: 0; flex: 1 1 280px; }
+.consentimiento a { color: var(--color-primary); text-decoration: underline; }
+.consentimiento__botones { display: flex; gap: 8px; }
+.consentimiento button { min-height: 44px; padding: 10px 18px; border-radius: 8px; font: inherit; font-weight: 700; cursor: pointer; border: 2px solid var(--color-primary); }
+.consentimiento__rechazar { background: #FFFFFF; color: var(--color-primary); }
+.consentimiento__aceptar { background: var(--color-primary); color: #FFFFFF; }
+body.con-aviso .whatsapp-float, body.en-contacto .whatsapp-float { opacity: 0; pointer-events: none; }
+.whatsapp-float { transition: opacity .2s; }
+@media (max-width: 480px) { .nav__wa { padding: 6px 12px; font-size: 14px; margin-right: 8px; } .nav__wa-num { display: none; } }
