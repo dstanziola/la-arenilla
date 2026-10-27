@@ -1,0 +1,13 @@
+# Configuracion para publicar arenilla.online en Netlify con cabeceras de seguridad (requisito 6.2 del estandar de sitios).
+# Mientras el sitio siga en GitHub Pages este archivo no tiene efecto.
+[build]
+  publish = "docs"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
