@@ -1538,6 +1538,11 @@ strong {
     color: var(--color-primary);
 }
 
+.contacto__canal-icon--google {
+    background-color: rgba(26, 115, 232, 0.1);
+    color: #1A73E8;
+}
+
 /* Horario en contacto */
 .contacto__horario {
     margin-top: var(--space-6);
