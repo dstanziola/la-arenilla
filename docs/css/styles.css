@@ -1757,3 +1757,6 @@ strong {
 body.con-aviso .whatsapp-float, body.en-contacto .whatsapp-float { opacity: 0; pointer-events: none; }
 .whatsapp-float { transition: opacity .2s; }
 @media (max-width: 480px) { .nav__wa { padding: 6px 12px; font-size: 14px; margin-right: 8px; } .nav__wa-num { display: none; } }
+
+/* Escritorio: menu a la derecha del logo y boton de WhatsApp al final (26-oct-2026) */
+@media (min-width: 768px) { .nav__menu { margin-left: auto; } .nav__wa { margin-left: var(--space-6); margin-right: 0; } }
