@@ -527,3 +527,49 @@ domReady(() => {
     
     console.log('🌿 La Arenilla - Sitio cargado correctamente');
 });
+
+
+// ----- Correo (26-oct-2026) -----
+// Al hacer clic en el correo se intenta abrir el programa de correo y, además, se copia la dirección.
+// En computadoras sin programa de correo el enlace «mailto» no hace nada; así el visitante siempre se queda con la dirección.
+(function () {
+    var aviso;
+    function mostrar(texto) {
+        if (!aviso) {
+            aviso = document.createElement('div');
+            aviso.setAttribute('role', 'status');
+            aviso.setAttribute('aria-live', 'polite');
+            aviso.style.cssText = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:10000;max-width:calc(100% - 32px);padding:12px 18px;border-radius:8px;background:#1E3D1A;color:#fff;font:600 15px/1.4 system-ui,sans-serif;box-shadow:0 4px 16px rgba(0,0,0,.25);text-align:center;opacity:0;transition:opacity .2s;pointer-events:none';
+            document.body.appendChild(aviso);
+        }
+        aviso.textContent = texto;
+        aviso.style.opacity = '1';
+        clearTimeout(aviso._t);
+        aviso._t = setTimeout(function () { aviso.style.opacity = '0'; }, 4000);
+    }
+    function copiar(texto) {
+        if (navigator.clipboard && window.isSecureContext) {
+            return navigator.clipboard.writeText(texto);
+        }
+        return new Promise(function (ok, falla) {
+            var t = document.createElement('textarea');
+            t.value = texto;
+            t.setAttribute('readonly', '');
+            t.style.cssText = 'position:fixed;opacity:0';
+            document.body.appendChild(t);
+            t.select();
+            try { if (document.execCommand('copy')) { ok(); } else { falla(); } } catch (e) { falla(e); }
+            document.body.removeChild(t);
+        });
+    }
+    document.addEventListener('click', function (e) {
+        var a = e.target.closest ? e.target.closest('a[href^="mailto:"]') : null;
+        if (!a) { return; }
+        var correo = decodeURIComponent(a.getAttribute('href').slice(7).split('?')[0]);
+        copiar(correo).then(function () {
+            mostrar('Correo copiado: ' + correo);
+        }, function () {
+            mostrar('Escríbenos a ' + correo);
+        });
+    });
+})();
