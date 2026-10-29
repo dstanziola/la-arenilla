@@ -409,6 +409,27 @@ strong {
 .nav__logo-img {
     width: 40px;
     height: 40px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.nav__logo-text .nombre-completo {
+    display: none;
+}
+
+.nav__logo-text .nombre-corto {
+    font-size: var(--text-base);
+}
+
+@media (min-width: 1024px) {
+    .nav__logo-text .nombre-completo {
+        display: inline;
+        font-size: var(--text-base);
+    }
+
+    .nav__logo-text .nombre-corto {
+        display: none;
+    }
 }
 
 .nav__logo-text {
@@ -1139,9 +1160,12 @@ strong {
 }
 
 .footer__logo-img {
-    width: 36px;
-    height: 36px;
-    filter: brightness(0) invert(1);
+    width: 48px;
+    height: 54px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 4px;
+    padding: 2px;
 }
 
 .footer__logo-text {
@@ -1765,3 +1789,7 @@ body.con-aviso .whatsapp-float, body.en-contacto .whatsapp-float { opacity: 0; p
 
 /* Escritorio: menu a la derecha del logo y boton de WhatsApp al final (26-oct-2026) */
 @media (min-width: 768px) { .nav__menu { margin-left: auto; } .nav__wa { margin-left: var(--space-6); margin-right: 0; } }
+
+.contacto__asociacion {
+    font-weight: var(--font-semibold);
+}
