@@ -24,7 +24,7 @@
         d.className = 'consentimiento';
         d.setAttribute('role', 'dialog');
         d.setAttribute('aria-label', 'Aviso de cookies');
-        d.innerHTML = '<p>Usamos Google Analytics para contar las visitas de forma agregada, solo si aceptas. Más información en la <a href="privacidad.html">Política de privacidad</a>.</p>' +
+        d.innerHTML = '<p>Usamos Google Analytics para contar las visitas de forma agregada, solo si aceptas. Consulta la <a href="privacidad.html">Política de privacidad</a> para conocer más.</p>' +
             '<div class="consentimiento__botones"><button type="button" class="consentimiento__rechazar">Rechazar</button><button type="button" class="consentimiento__aceptar">Aceptar</button></div>';
         document.body.appendChild(d);
         document.body.classList.add('con-aviso');
